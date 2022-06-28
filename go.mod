@@ -1,7 +1,5 @@
 module example.com/conways
 
-replace example.com/conways/life => ./life
-
 go 1.18
 
 require (
