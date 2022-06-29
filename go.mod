@@ -1,9 +1,8 @@
-module example.com/conways
+module github.com/CosyOranges/ConwaysGameOfLife
 
 go 1.18
 
 require (
-	example.com/conways/life v0.0.0-00010101000000-000000000000 // indirect
 	github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751 // indirect
 	github.com/alecthomas/units v0.0.0-20211218093645-b94a6e3cc137 // indirect
 	github.com/go-gl/glfw/v3.3/glfw v0.0.0-20220320163800-277f93cfa958 // indirect
