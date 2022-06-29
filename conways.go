@@ -2,10 +2,15 @@ package main
 
 import (
 	"fmt"
+
 	"math/rand"
+
 	"os"
+
 	"os/exec"
+
 	"runtime"
+
 	"time"
 
 	"image/color"
