@@ -59,7 +59,7 @@ jobs:
     - name: NPM Install
       run: |
         npm i -g semantic-release@18
-        npm i --save-dev @semantic-release/git @semantic-release/changelog -D
+        npm i --save-dev @semantic-release/git @semantic-release/changelog conventional-changelog-conventionalcommits -D
 
     - name: Semantic Release
       run: |
