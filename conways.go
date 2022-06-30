@@ -42,9 +42,8 @@ func NewMatrix(rows int, cols int) [][]uint8 {
 }
 
 var (
-	counter int        = 0
-	black   color.RGBA = color.RGBA{95, 95, 95, 255}
-	white   color.RGBA = color.RGBA{233, 233, 233, 255}
+	black color.RGBA = color.RGBA{95, 95, 95, 255}
+	white color.RGBA = color.RGBA{233, 233, 233, 255}
 )
 
 func initialiseGameBoard(height, width int) *Game {
@@ -196,10 +195,6 @@ func (g *Game) VerticalGlider() {
 	g.grid[8][17] = 1
 	g.grid[9][20] = 1
 	g.grid[9][18] = 1
-}
-
-func add(x *int) {
-	*x += 7
 }
 
 func main() {
