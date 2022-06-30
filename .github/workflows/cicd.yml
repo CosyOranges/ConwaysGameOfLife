@@ -58,11 +58,11 @@ jobs:
 
     - name: NPM Install
       run: |
-        npm i --save-dev semantic-release
+        npm i -g semantic-release@18
         npm i --save-dev @semantic-release/git @semantic-release/changelog -D
 
     - name: Semantic Release
       run: |
-        npx semantic-release
+        npx semantic-release@18
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
