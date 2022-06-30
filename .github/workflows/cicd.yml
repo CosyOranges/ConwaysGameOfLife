@@ -1,4 +1,4 @@
-name: Audit
+name: CICD
 
 on:
   push:
@@ -41,3 +41,27 @@ jobs:
 
     # - name: Run tests
     #   run: go test -race -vet=off ./...
+  release:
+    name: Release
+    runs-on: ubuntu-20.04
+    needs: audit
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup Node.js environment
+        uses: actions/setup-node@v2.5.1
+
+    - name: Set up Go
+      uses: actions/setup-go@v2
+      with:
+        go-version: 1.18
+
+    - name: NPM Install
+        run: |
+          npm i
+          npm i -g semantic-release
+
+    - name: Semantic Release
+      run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
