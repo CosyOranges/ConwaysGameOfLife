@@ -1,4 +1,4 @@
-[![Audit](https://github.com/CosyOranges/ConwaysGameOfLife/actions/workflows/audit.yml/badge.svg?branch=main)](https://github.com/CosyOranges/ConwaysGameOfLife/actions/workflows/audit.yml)
+[![CICD](https://github.com/CosyOranges/ConwaysGameOfLife/actions/workflows/cicd.yml/badge.svg)](https://github.com/CosyOranges/ConwaysGameOfLife/actions/workflows/cicd.yml)
 # ConwaysGameOfLife
 ---
 
