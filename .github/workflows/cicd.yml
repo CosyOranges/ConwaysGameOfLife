@@ -57,9 +57,9 @@ jobs:
         go-version: 1.18
 
     - name: NPM Install
-        run: |
-          npm i
-          npm i -g semantic-release
+      run: |
+        npm i
+        npm i -g semantic-release
 
     - name: Semantic Release
       run: npx semantic-release
