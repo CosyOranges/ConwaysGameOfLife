@@ -59,6 +59,7 @@ jobs:
     - name: NPM Install
       run: |
         npm i -g semantic-release
+        npm install @semantic-release/git @semantic-release/changelog -D
 
     - name: Semantic Release
       run: |
